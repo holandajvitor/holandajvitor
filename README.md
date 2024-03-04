@@ -13,7 +13,7 @@
 
 ###
 
-<p align="left">*Tech enthusiast 🚀<br>*Currently studying Software Engineering and Systems Analysis 💻📘<br>*Excited about innovative tech solutions</p>
+<p align="left"> • Tech enthusiast 🚀<br> • Currently studying Software Engineering and Systems Analysis 💻📘<br> • Excited about innovative tech solutions</p>
 
 ###
 
