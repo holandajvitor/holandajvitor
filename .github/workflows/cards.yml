@@ -1,0 +1,50 @@
+name: Generate profile cards
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/**"
+      - ".github/workflows/cards.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Test card renderers
+        run: npm test
+
+      - name: Generate cards
+        run: npm run cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.CARDS_TOKEN || github.token }}
+          GITHUB_LOGIN: ${{ github.repository_owner }}
+          CARDS_UTC_OFFSET: "-3"
+
+      - name: Publish cards to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

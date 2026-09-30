@@ -1,23 +1,84 @@
-<div align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3a3a3a,100:000000&height=180&section=header&text=Vitor%20Holanda&fontColor=ffffff&fontSize=46&fontAlignY=36&desc=Software%20Engineer&descAlignY=58&descSize=18" width="100%" alt="Vitor Holanda, Software Engineer" />
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3a3a3a,100:000000&height=180&section=header&text=Vitor%20Holanda&fontColor=ffffff&fontSize=46&fontAlignY=36&desc=Software%20Engineer&descAlignY=58&descSize=18" width="100%" alt="Vitor Holanda, Software Engineer" />
+
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=D4D4D4&center=true&vCenter=true&width=560&lines=Hi%2C+I'm+Vitor+%F0%9F%91%8B;Software+Engineer+building+with+TypeScript;Shipping+to+production%2C+not+just+localhost" alt="Typing SVG" /></a>
 
-<p> <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-freitas-holanda-05232b275/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a> <a href="https://www.instagram.com/hlndjv/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a> <a href="mailto:holandajvitor@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a> </p> </div>
-👨‍💻 About me
-Software Engineer from Brazil, studying Software Engineering and Systems Analysis
+<p>
+  <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-freitas-holanda-05232b275/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.instagram.com/hlndjv/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+  <a href="mailto:holandajvitor@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
 
-Currently building Stockly, a multi-tenant inventory management SaaS, now live in production
+</div>
 
-I like typed APIs, clean architecture and interfaces that feel good to use
+## 👨‍💻 About me
 
-Learning more about CI/CD, cloud deployment and testing
+- Software Engineer from Brazil, studying **Software Engineering** and **Systems Analysis**
 
-Ask me about TypeScript, React and Node.js
+- Currently building **Stockly**, a multi-tenant inventory management SaaS, now live in production
 
-🛠️ Tech stack
-<p align="center"> <img src="https://skillicons.dev/icons?i=ts,nodejs,react,express,vite,mongodb,docker,githubactions,git" alt="TypeScript, Node.js, React, Express, Vite, MongoDB, Docker, GitHub Actions, Git" /> <br /> <sub>TypeScript · Node.js · React · Express · Vite · MongoDB · Docker · CI/CD with GitHub Actions · Git</sub> </p>
-🚀 Featured project
-<table> <tr> <td> <h3>📦 <a href="https://stockly.holandajvitor.workers.dev">Stockly</a>: inventory & sales management SaaS</h3> <p>A multi-tenant SaaS for small businesses to manage products, categories, sales and their team, with every company's data isolated from the others. Live in production.</p> <ul> <li>🔐 JWT authentication with roles (admin and seller), rate limiting and hardened headers</li> <li>🏢 Multi-tenant data isolation enforced at the repository layer</li> <li>⚡ Real-time notifications over WebSockets</li> <li>📊 Sales reports with charts and PDF/Excel export</li> <li>💳 Subscription flow with trial and premium plans</li> <li>🧪 Unit and integration tests (Jest, Supertest) plus E2E with Playwright</li> <li>🐳 Dockerized API, with type check, tests and image build on every push via GitHub Actions</li> </ul> <p> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /> <img src="https://img.shields.io/badge/React_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white" alt="React Query" /> <img src="https://img.shields.io/badge/styled--components-DB7093?style=flat-square&logo=styledcomponents&logoColor=white" alt="styled-components" /> <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" /> <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" /> <img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.IO" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" /> </p> <p><a href="https://stockly.holandajvitor.workers.dev"><img src="https://img.shields.io/badge/Live_demo-stockly.holandajvitor.workers.dev-1f1f1f?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=000000" alt="Live demo" /></a></p> <sub>🔒 Private repository · Frontend on Cloudflare Workers · API on Render · Database on MongoDB Atlas</sub> </td> </tr> </table>
-📊 GitHub stats
-<div align="center"> <img width="100%" src="https://raw.githubusercontent.com/holandajvitor/holandajvitor/output/contributions.svg" alt="Contributions in the last year" /> <br /> <img width="49%" src="https://raw.githubusercontent.com/holandajvitor/holandajvitor/output/stats.svg" alt="GitHub stats" /> <img width="49%" src="https://raw.githubusercontent.com/holandajvitor/holandajvitor/output/commits-by-hour.svg" alt="Commits by hour of the day" /> </div>
-💭 Dev quote
-<p align="center"> <img width="100%" src="https://raw.githubusercontent.com/holandajvitor/holandajvitor/output/quote.svg" alt="Dev quote" /> </p> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:3a3a3a&height=100&section=footer" width="100%" alt="" />
+- I like typed APIs, clean architecture and interfaces that feel good to use
+
+- Learning more about CI/CD, cloud deployment and testing
+
+- Ask me about **TypeScript**, **React** and **Node.js**
+
+## 🛠️ Tech stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,nodejs,react,express,vite,mongodb,docker,githubactions,git" alt="TypeScript, Node.js, React, Express, Vite, MongoDB, Docker, GitHub Actions, Git" />
+  <br />
+  <sub>TypeScript · Node.js · React · Express · Vite · MongoDB · Docker · CI/CD with GitHub Actions · Git</sub>
+</p>
+
+## 🚀 Featured project
+
+<table>
+  <tr>
+    <td>
+      <h3>📦 <a href="https://stockly.holandajvitor.workers.dev">Stockly</a>: inventory & sales management SaaS</h3>
+      <p>A multi-tenant SaaS for small businesses to manage products, categories, sales and their team, with every company's data isolated from the others. Live in production.</p>
+      <ul>
+        <li>🔐 JWT authentication with roles (admin and seller), rate limiting and hardened headers</li>
+        <li>🏢 Multi-tenant data isolation enforced at the repository layer</li>
+        <li>⚡ Real-time notifications over WebSockets</li>
+        <li>📊 Sales reports with charts and PDF/Excel export</li>
+        <li>💳 Subscription flow with trial and premium plans</li>
+        <li>🧪 Unit and integration tests (Jest, Supertest) plus E2E with Playwright</li>
+        <li>🐳 Dockerized API, with type check, tests and image build on every push via GitHub Actions</li>
+      </ul>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+        <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+        <img src="https://img.shields.io/badge/React_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white" alt="React Query" />
+        <img src="https://img.shields.io/badge/styled--components-DB7093?style=flat-square&logo=styledcomponents&logoColor=white" alt="styled-components" />
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+        <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
+        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+        <img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.IO" />
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+      </p>
+      <p><a href="https://stockly.holandajvitor.workers.dev"><img src="https://img.shields.io/badge/Live_demo-stockly.holandajvitor.workers.dev-1f1f1f?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=000000" alt="Live demo" /></a></p>
+      <sub>🔒 Private repository · Frontend on Cloudflare Workers · API on Render · Database on MongoDB Atlas</sub>
+    </td>
+  </tr>
+</table>
+
+## 📊 GitHub stats
+
+<div align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/holandajvitor/holandajvitor/output/contributions.svg" alt="Contributions in the last year" />
+  <br />
+  <img width="49%" src="https://raw.githubusercontent.com/holandajvitor/holandajvitor/output/stats.svg" alt="GitHub stats" />
+  <img width="49%" src="https://raw.githubusercontent.com/holandajvitor/holandajvitor/output/commits-by-hour.svg" alt="Commits by hour of the day" />
+</div>
+
+## 💭 Dev quote
+
+<p align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/holandajvitor/holandajvitor/output/quote.svg" alt="Dev quote" />
+</p>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:3a3a3a&height=100&section=footer" width="100%" alt="" />
