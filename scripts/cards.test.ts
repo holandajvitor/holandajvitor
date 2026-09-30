@@ -10,8 +10,8 @@ import {
   renderStatsCard,
   wrapText,
 } from './cards.ts';
-import type { ContributionDay, ProfileData } from './github.ts';
-import { toLocalHour } from './github.ts';
+import type { ContributionDay, ProfileData, ProfileUser } from './github.ts';
+import { toLocalHour, toProfileData } from './github.ts';
 import { pickQuote, QUOTES } from './quotes.ts';
 
 const NOW = new Date('2026-09-29T12:00:00Z');
@@ -57,6 +57,49 @@ describe('toLocalHour', () => {
     assert.equal(toLocalHour('2026-09-29T02:30:00Z', -3), 23);
     assert.equal(toLocalHour('2026-09-29T15:00:00Z', -3), 12);
     assert.equal(toLocalHour('2026-09-29T22:00:00Z', 5), 3);
+  });
+});
+
+describe('toProfileData', () => {
+  const user: ProfileUser = {
+    id: 'U_1',
+    login: 'holandajvitor',
+    name: null,
+    location: 'Brazil',
+    createdAt: '2023-07-03T13:32:07Z',
+    publicRepos: { totalCount: 5 },
+    ownedRepos: {
+      nodes: [
+        { name: 'stockly', stargazerCount: 0, owner: { login: 'holandajvitor' } },
+        { name: 'holandajvitor', stargazerCount: 1, owner: { login: 'holandajvitor' } },
+      ],
+    },
+    pullRequests: { totalCount: 2 },
+    issues: { totalCount: 0 },
+    repositoriesContributedTo: { totalCount: 5 },
+    contributionsCollection: {
+      contributionCalendar: {
+        totalContributions: 114,
+        weeks: [{ contributionDays: [{ date: '2026-09-28', contributionCount: 15 }] }],
+      },
+    },
+  };
+
+  it('conta os commits pelas datas coletadas, incluindo repositórios privados', () => {
+    const commitDates = ['2026-09-28T18:00:00Z', '2026-09-28T19:30:00Z', '2026-09-29T02:00:00Z'];
+    const profile = toProfileData(user, commitDates, -3);
+    assert.equal(profile.commitsLastYear, 3);
+    assert.equal(profile.commitHours.reduce((sum, count) => sum + count, 0), profile.commitsLastYear);
+    assert.equal(profile.commitHours[15], 1);
+    assert.equal(profile.commitHours[23], 1);
+  });
+
+  it('usa o login quando o nome não existe e soma as estrelas', () => {
+    const profile = toProfileData(user, [], -3);
+    assert.equal(profile.name, 'holandajvitor');
+    assert.equal(profile.stars, 1);
+    assert.equal(profile.commitsLastYear, 0);
+    assert.deepEqual(profile.days, [{ date: '2026-09-28', count: 15 }]);
   });
 });
 

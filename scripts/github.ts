@@ -38,26 +38,27 @@ interface OwnedRepository {
   owner: { login: string };
 }
 
-interface ProfileQuery {
-  user: {
-    id: string;
-    login: string;
-    name: string | null;
-    location: string | null;
-    createdAt: string;
-    publicRepos: { totalCount: number };
-    ownedRepos: { nodes: OwnedRepository[] };
-    pullRequests: { totalCount: number };
-    issues: { totalCount: number };
-    repositoriesContributedTo: { totalCount: number };
-    contributionsCollection: {
-      totalCommitContributions: number;
-      contributionCalendar: {
-        totalContributions: number;
-        weeks: { contributionDays: { date: string; contributionCount: number }[] }[];
-      };
+export interface ProfileUser {
+  id: string;
+  login: string;
+  name: string | null;
+  location: string | null;
+  createdAt: string;
+  publicRepos: { totalCount: number };
+  ownedRepos: { nodes: OwnedRepository[] };
+  pullRequests: { totalCount: number };
+  issues: { totalCount: number };
+  repositoriesContributedTo: { totalCount: number };
+  contributionsCollection: {
+    contributionCalendar: {
+      totalContributions: number;
+      weeks: { contributionDays: { date: string; contributionCount: number }[] }[];
     };
-  } | null;
+  };
+}
+
+interface ProfileQuery {
+  user: ProfileUser | null;
 }
 
 interface CommitHistoryPage {
@@ -87,7 +88,6 @@ const PROFILE_QUERY = `
       issues { totalCount }
       repositoriesContributedTo(includeUserRepositories: true, contributionTypes: [COMMIT, PULL_REQUEST, ISSUE, REPOSITORY]) { totalCount }
       contributionsCollection(from: $from, to: $to) {
-        totalCommitContributions
         contributionCalendar {
           totalContributions
           weeks { contributionDays { date contributionCount } }
@@ -191,9 +191,13 @@ export async function fetchProfile(token: string, login: string, now: Date, utcO
     user.ownedRepos.nodes.map((repository) => fetchCommitDates(token, repository, user.id, from)),
   );
 
+  return toProfileData(user, commitDates.flat(), utcOffset);
+}
+
+export function toProfileData(user: ProfileUser, commitDates: string[], utcOffset: number): ProfileData {
   const commitHours = new Array<number>(24).fill(0);
 
-  for (const date of commitDates.flat()) {
+  for (const date of commitDates) {
     commitHours[toLocalHour(date, utcOffset)] += 1;
   }
 
@@ -209,7 +213,7 @@ export async function fetchProfile(token: string, login: string, now: Date, utcO
     pullRequests: user.pullRequests.totalCount,
     issues: user.issues.totalCount,
     contributedTo: user.repositoriesContributedTo.totalCount,
-    commitsLastYear: user.contributionsCollection.totalCommitContributions,
+    commitsLastYear: commitDates.length,
     contributionsLastYear: calendar.totalContributions,
     days: calendar.weeks.flatMap((week) =>
       week.contributionDays.map((day) => ({ date: day.date, count: day.contributionCount })),
