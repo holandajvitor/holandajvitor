@@ -6,13 +6,10 @@ import {
   groupByWeek,
   renderContributionsCard,
   renderHoursCard,
-  renderQuoteCard,
   renderStatsCard,
-  wrapText,
 } from './cards.ts';
 import type { ContributionDay, ProfileData, ProfileUser } from './github.ts';
 import { toLocalHour, toProfileData } from './github.ts';
-import { pickQuote, QUOTES } from './quotes.ts';
 
 const NOW = new Date('2026-09-29T12:00:00Z');
 
@@ -115,16 +112,6 @@ describe('groupByWeek', () => {
   });
 });
 
-describe('wrapText', () => {
-  it('quebra linhas sem ultrapassar o limite de caracteres', () => {
-    const lines = wrapText('one two three four five six', 9);
-    assert.deepEqual(lines, ['one two', 'three', 'four five', 'six']);
-  });
-
-  it('mantém uma palavra maior que o limite na própria linha', () => {
-    assert.deepEqual(wrapText('supercalifragilistic ok', 5), ['supercalifragilistic', 'ok']);
-  });
-});
 
 describe('renderContributionsCard', () => {
   it('gera um SVG com o degradê e os dados do perfil', () => {
@@ -186,22 +173,4 @@ describe('renderHoursCard', () => {
   });
 });
 
-describe('renderQuoteCard', () => {
-  it('ajusta a altura ao número de linhas', () => {
-    const short = renderQuoteCard({ text: 'Short.', author: 'Someone' });
-    const long = renderQuoteCard(QUOTES[4]);
-    const heightOf = (svg: string): number => Number(/height="(\d+)"/.exec(svg)?.[1]);
-    assert.ok(heightOf(long) > heightOf(short));
-    assert.ok(isWellFormed(long));
-  });
-});
 
-describe('pickQuote', () => {
-  it('troca de citação a cada 12 horas', () => {
-    const first = pickQuote(new Date('2026-09-29T00:00:00Z'));
-    const same = pickQuote(new Date('2026-09-29T11:59:00Z'));
-    const next = pickQuote(new Date('2026-09-29T12:00:00Z'));
-    assert.equal(first, same);
-    assert.notEqual(first, next);
-  });
-});

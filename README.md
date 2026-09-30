@@ -27,9 +27,9 @@
 ## 🛠️ Tech stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,nodejs,react,express,vite,mongodb,docker,githubactions,git" alt="TypeScript, Node.js, React, Express, Vite, MongoDB, Docker, GitHub Actions, Git" />
+  <img src="https://skillicons.dev/icons?i=ts,nodejs,react,express,vite,mongodb,docker,aws,githubactions,git" alt="TypeScript, Node.js, React, Express, Vite, MongoDB, Docker, AWS, GitHub Actions, Git" />
   <br />
-  <sub>TypeScript · Node.js · React · Express · Vite · MongoDB · Docker · CI/CD with GitHub Actions · Git</sub>
+  <sub>TypeScript · Node.js · React · Express · Vite · MongoDB · Docker · AWS · CI/CD with GitHub Actions · Git</sub>
 </p>
 
 ## 🚀 Featured project
@@ -39,6 +39,14 @@
     <td>
       <h3>📦 <a href="https://stockly.holandajvitor.workers.dev">Stockly</a>: inventory & sales management SaaS</h3>
       <p>A multi-tenant SaaS for small businesses to manage products, categories, sales and their team, with every company's data isolated from the others. Live in production.</p>
+      <a href="https://stockly.holandajvitor.workers.dev">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/holandajvitor/holandajvitor/main/assets/stockly-reports-dark.png" />
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/holandajvitor/holandajvitor/main/assets/stockly-reports-light.png" />
+          <img width="100%" src="https://raw.githubusercontent.com/holandajvitor/holandajvitor/main/assets/stockly-reports-dark.png" alt="Stockly reports page with revenue, average ticket, daily sales chart and best-selling products for a demo store" />
+        </picture>
+      </a>
+      <p align="center"><sub>Reports page with demo data</sub></p>
       <ul>
         <li>🔐 JWT authentication with roles (admin and seller), rate limiting and hardened headers</li>
         <li>🏢 Multi-tenant data isolation enforced at the repository layer</li>
@@ -74,11 +82,5 @@
   <img width="49%" src="https://raw.githubusercontent.com/holandajvitor/holandajvitor/output/stats.svg" alt="GitHub stats" />
   <img width="49%" src="https://raw.githubusercontent.com/holandajvitor/holandajvitor/output/commits-by-hour.svg" alt="Commits by hour of the day" />
 </div>
-
-## 💭 Dev quote
-
-<p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/holandajvitor/holandajvitor/output/quote.svg" alt="Dev quote" />
-</p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:3a3a3a&height=100&section=footer" width="100%" alt="" />

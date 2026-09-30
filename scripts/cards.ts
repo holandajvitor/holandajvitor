@@ -1,9 +1,7 @@
 import type { ContributionDay, ProfileData } from './github.ts';
-import type { Quote } from './quotes.ts';
 
 const FONT = "'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif";
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-const QUOTE_CHARS_PER_LINE = 72;
 
 const PALETTE = {
   from: '#303030',
@@ -215,45 +213,4 @@ ${bars}
 ${hourLabels}${empty}`;
 
   return frame(width, height, `Commits by hour of the day (${offsetLabel})`, body);
-}
-
-export function wrapText(text: string, maxChars: number): string[] {
-  const lines: string[] = [];
-  let current = '';
-
-  for (const word of text.split(/\s+/).filter(Boolean)) {
-    const candidate = current ? `${current} ${word}` : word;
-
-    if (candidate.length > maxChars && current) {
-      lines.push(current);
-      current = word;
-    } else {
-      current = candidate;
-    }
-  }
-
-  if (current) {
-    lines.push(current);
-  }
-
-  return lines;
-}
-
-export function renderQuoteCard(quote: Quote): string {
-  const width = 800;
-  const lines = wrapText(quote.text, QUOTE_CHARS_PER_LINE);
-  const firstLineY = 62;
-  const lineHeight = 30;
-  const authorY = firstLineY + lines.length * lineHeight + 14;
-  const height = authorY + 30;
-
-  const quoteLines = lines
-    .map((line, index) => `    <text x="80" y="${firstLineY + index * lineHeight}" font-size="19" font-style="italic" fill="${PALETTE.title}">${escapeXml(line)}</text>`)
-    .join('\n');
-
-  const body = `    <text x="28" y="86" font-size="84" font-family="Georgia, serif" fill="${PALETTE.border}">“</text>
-${quoteLines}
-    <text x="${width - 40}" y="${authorY}" font-size="14" fill="${PALETTE.muted}" text-anchor="end">— ${escapeXml(quote.author)}</text>`;
-
-  return frame(width, height, `"${quote.text}" — ${quote.author}`, body);
 }

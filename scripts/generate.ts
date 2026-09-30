@@ -1,9 +1,8 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-import { renderContributionsCard, renderHoursCard, renderQuoteCard, renderStatsCard } from './cards.ts';
+import { renderContributionsCard, renderHoursCard, renderStatsCard } from './cards.ts';
 import { fetchProfile } from './github.ts';
-import { pickQuote } from './quotes.ts';
 
 const OUTPUT_DIR = 'dist';
 const DEFAULT_UTC_OFFSET = -3;
@@ -24,7 +23,6 @@ async function main(): Promise<void> {
     'contributions.svg': renderContributionsCard(profile, now),
     'stats.svg': renderStatsCard(profile),
     'commits-by-hour.svg': renderHoursCard(profile.commitHours, utcOffset),
-    'quote.svg': renderQuoteCard(pickQuote(now)),
   };
 
   await mkdir(OUTPUT_DIR, { recursive: true });
