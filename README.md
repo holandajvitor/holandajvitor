@@ -1,62 +1,16 @@
-<h1 align="left">Hi, I'm Vitor!! 😊👋</h1>
+<div align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,100:6d5dfc&height=180&section=header&text=Vitor%20Holanda&fontColor=ffffff&fontSize=46&fontAlignY=36&desc=Software%20Engineer&descAlignY=58&descSize=18" width="100%" alt="Vitor Holanda, Software Engineer" />
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=8B7CFF&center=true&vCenter=true&width=560&lines=Hi%2C+I'm+Vitor+%F0%9F%91%8B;Software+Engineer+building+with+TypeScript;Shipping+to+production%2C+not+just+localhost" alt="Typing SVG" /></a>
 
-###
-
-<div align="center">
-  <img height="200" src="https://i.pinimg.com/originals/7a/e3/c7/7ae3c7ad104a968dc735871c0bf17608.gif"  />
-</div>
-
-
-###
-
-<h1 align="left">About Me</h1>
-
-###
-
-<p align="left"> • Tech enthusiast 🚀<br> • Currently studying Software Engineering and Systems Analysis 💻📘<br> • Excited about innovative tech solutions</p>
-
-###
-
-<div align="left">
-  <a href="https://www.linkedin.com/in/vitor-holanda-05232b275/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.instagram.com/_hlnd.jv/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
-  </a>
-</div>
-
-###
-
-<p align="left">---</p>
-
-###
-
-<h2 align="left">Skills</h2>
-
-###
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
-</div>
-
-###
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=holandajvitor&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=holandajvitor&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
-</div>
-
-###
-
+<p> <a href="https://www.linkedin.com/in/vitor-holanda-05232b275/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a> <a href="https://www.instagram.com/_hlnd.jv/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a> <a href="mailto:holandajvitor@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a> </p> </div>
+👨‍💻 About me
+🇧🇷 Software Engineer from Brazil, studying Software Engineering and Systems Analysis
+🔭 Currently building Stockly, a multi-tenant inventory management SaaS, now live in production
+🧱 I like typed APIs, clean architecture and interfaces that feel good to use
+🌱 Learning more about CI/CD, cloud deployment and testing
+💬 Ask me about TypeScript, React and Node.js
+🛠️ Tech stack
+<p align="center"> <img src="https://skillicons.dev/icons?i=ts,nodejs,react,express,vite,mongodb,docker,git" alt="TypeScript, Node.js, React, Express, Vite, MongoDB, Docker, Git" /> </p>
+🚀 Featured project
+<table> <tr> <td> <h3>📦 Stockly: inventory & sales management SaaS</h3> <p>A multi-tenant SaaS for small businesses to manage products, categories, sales and their team, with every company's data isolated from the others. Live in production.</p> <ul> <li>🔐 JWT authentication with roles (admin and seller), rate limiting and hardened headers</li> <li>🏢 Multi-tenant data isolation enforced at the repository layer</li> <li>⚡ Real-time notifications over WebSockets</li> <li>📊 Sales reports with charts and PDF/Excel export</li> <li>💳 Subscription flow with trial and premium plans</li> <li>🧪 Unit and integration tests (Jest, Supertest) plus E2E with Playwright</li> <li>🐳 Dockerized API, with type check, tests and image build on every push via GitHub Actions</li> </ul> <p> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /> <img src="https://img.shields.io/badge/React_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white" alt="React Query" /> <img src="https://img.shields.io/badge/styled--components-DB7093?style=flat-square&logo=styledcomponents&logoColor=white" alt="styled-components" /> <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" /> <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" /> <img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.IO" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" /> </p> <sub>🔒 Private repository · Frontend on Cloudflare Workers · API on Render · Database on MongoDB Atlas</sub> </td> </tr> </table>
+📊 GitHub stats
+<div align="center"> <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=holandajvitor&theme=tokyonight" alt="GitHub stats" /> <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=holandajvitor&theme=tokyonight" alt="Most used languages" /> <br /> <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=holandajvitor&theme=tokyonight" alt="Contributions" /> </div> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6d5dfc,100:1a1b27&height=100&section=footer" width="100%" alt="" />
