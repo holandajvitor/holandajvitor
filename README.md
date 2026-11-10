@@ -14,25 +14,27 @@
 
 ## 👨‍💻 About me
 
-- Software Engineer from Brazil, studying **Software Engineering** and **Systems Analysis**
+- Software Engineer from Brazil, graduated in **Systems Analysis and Development** and studying **Software Engineering**
 
-- Currently building **Stockly**, a multi-tenant inventory management SaaS, now live in production
+- Built **Stockly**, a multi-tenant inventory management SaaS, now live in production
+
+- Currently building **Brillare**, a full e-commerce platform with a storefront, an owner's dashboard and a mobile app, in a TypeScript monorepo with Next.js, Express 5 and PostgreSQL
 
 - I like typed APIs, clean architecture and interfaces that feel good to use
 
-- Learning more about CI/CD, cloud deployment and testing
+- Learning more about payments integration, end-to-end testing and monorepo tooling
 
-- Ask me about **TypeScript**, **React** and **Node.js**
+- Ask me about **TypeScript**, **React**, **Next.js** and **Node.js**
 
 ## 🛠️ Tech stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,nodejs,react,express,vite,mongodb,docker,aws,githubactions,git" alt="TypeScript, Node.js, React, Express, Vite, MongoDB, Docker, AWS, GitHub Actions, Git" />
+  <img src="https://skillicons.dev/icons?i=ts,nodejs,react,nextjs,express,vite,tailwind,mongodb,postgres,prisma,docker,aws,githubactions,vitest,pnpm,git&perline=8" alt="TypeScript, Node.js, React, Next.js, Express, Vite, Tailwind CSS, MongoDB, PostgreSQL, Prisma, Docker, AWS, GitHub Actions, Vitest, pnpm, Git" />
   <br />
-  <sub>TypeScript · Node.js · React · Express · Vite · MongoDB · Docker · AWS · CI/CD with GitHub Actions · Git</sub>
+  <sub>TypeScript · Node.js · React · Next.js · Express · Vite · Tailwind CSS · MongoDB · PostgreSQL · Prisma · Zod · Docker · AWS · CI/CD with GitHub Actions · Vitest · Playwright · pnpm + Turborepo · Git</sub>
 </p>
 
-## 🚀 Featured project
+## 🚀 Featured projects
 
 <table>
   <tr>
@@ -70,6 +72,40 @@
       </p>
       <p><a href="https://stockly.holandajvitor.workers.dev"><img src="https://img.shields.io/badge/Live_demo-stockly.holandajvitor.workers.dev-1f1f1f?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=000000" alt="Live demo" /></a></p>
       <sub>🔒 Private repository · Frontend on Cloudflare Workers · API on Render · Database on MongoDB Atlas</sub>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <h3>✦ Brillare: e-commerce platform <sub>(in progress)</sub></h3>
+      <p>An online store for religious articles and gifts: a responsive storefront, a separate dashboard for the store owner and, next, a mobile app for shoppers. Built as a pnpm + Turborepo monorepo with shared contracts, design tokens and UI between every app.</p>
+      <ul>
+        <li>🛍️ Storefront and owner's dashboard in Next.js (App Router) with Tailwind CSS v4 and Radix UI</li>
+        <li>🧩 REST API in Express 5 with Prisma and PostgreSQL, layered into controllers, services and repositories</li>
+        <li>📐 Shared Zod schemas and a typed API client, so the API and the fronts speak the same contracts</li>
+        <li>💳 Checkout with Mercado Pago (PIX, card, boleto), signed webhooks and idempotent orders</li>
+        <li>📦 Shipping quotes with Melhor Envio, product photos on Cloudinary and transactional e-mails</li>
+        <li>🔒 Atomic stock reservation, so the last unit is never sold twice</li>
+        <li>🧪 Vitest unit tests, integration tests on a real PostgreSQL with Testcontainers, and E2E with Playwright, axe and Lighthouse</li>
+        <li>🚫 Strict TypeScript with zero <code>any</code>, enforced by ESLint and by CI on every push</li>
+      </ul>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+        <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+        <img src="https://img.shields.io/badge/React_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white" alt="React Query" />
+        <img src="https://img.shields.io/badge/Express_5-000000?style=flat-square&logo=express&logoColor=white" alt="Express 5" />
+        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma" />
+        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+        <img src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white" alt="Zod" />
+        <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" alt="Vitest" />
+        <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright" />
+        <img src="https://img.shields.io/badge/Turborepo-EF4444?style=flat-square&logo=turborepo&logoColor=white" alt="Turborepo" />
+        <img src="https://img.shields.io/badge/pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white" alt="pnpm" />
+      </p>
+      <sub>🔒 Private repository · Mercado Pago · Melhor Envio · Cloudinary · Docker for local PostgreSQL and Mailpit</sub>
     </td>
   </tr>
 </table>
